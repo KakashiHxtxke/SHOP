@@ -1,0 +1,16 @@
+﻿@model HomeViewModel
+
+
+<h2>Лучшие игры</h2>
+<div class="row mt-5 mb-2">
+    @{
+
+        foreach (game games in Model.favGames)
+        {
+            @Html.Partial("AllGames", games)
+        }
+
+    }
+
+
+</div>
